@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>La mia pagina web</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('path/to/your/gif.gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <!-- Contenuto dell'intestazione -->
+    <!-- ... -->
+  </header>
+
+  <section class="content">
+    <h2>Titolo della sezione</h2>
+    <p>Testo della sezione...</p>
+  </section>
+</body>
+</html>
