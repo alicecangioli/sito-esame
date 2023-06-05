@@ -1,70 +1,184 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Doll House</title>
+  <title>DOLLHOUSE</title>
+  <meta charset="utf-8"> 
   <style>
-     body {
-      background-color: black;
-      color: white; /* opzionale: imposta il colore del testo su bianco per migliorare la leggibilità */
-    }
-    /* Aggiungi stili CSS per l'header */
-    header {
-      background-color: #f1f1f1;
-      padding: 20px;
-    }
-
-    h1 {
-      color: #333;
-      font-size: 24px;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
+    body {
       margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
     }
-
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
+    
+    body {
+  background-color: black;
+}
+    .header {
+      background-color: black;
+      color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+    
     }
-
-    nav ul li a {
+    
+    .logo {
+      width: 280px;
+      height: auto;
+    }
+    
+    .menu-toggle {
+      color:#851064;
+      font-size: 40px;
+      cursor: pointer;
+      position: sticky;
+    
+    }
+  
+    
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu.open .menu-items {
+      display: flex;
+    }
+    
+    .menu-items li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    
+    .menu-items a {
+      color: #851064;
       text-decoration: none;
-      color: #333;
+      font-size: 30px;
+      font-weight: bold; 
     }
-  </style>
+    .footer {
+      background-color: #440147;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia il colore al passaggio del mouse */
+  font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
+}
+
+.product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .product-image {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-description {
+      margin-bottom: 5px;
+      color: #851064;
+    }
+
+    .preorder-button {
+      padding: 10px 20px;
+      background-color: #440147;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+ </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
+    }
+
+    
+
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Shop</h1>
-    <nav>
-      <ul>
-        <li><a class="whitelink nounderline" href="home.html">Home</a></li>
-        <li><a class="whitelink nounderline" href="eventi.html">Eventi</a></li>
-        <li><a class="whitelink nounderline" href="galleria.html">Galleria/DJ?</a></li>
-        <li><a class="active nounderline" href="shop.html">Shop</a></li>
-        <li><a class="whitelink no underline" href="documentazione.html">Documentazione</a></li>
+  <header class="header">
+    <img class="logo" src="immagini/doll house9.jpg" alt="Logo">
+    <nav class="menu">
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <ul class="menu-items">
+        <li><a class="active nounderline" href="home.html">HOME</a></li>
+        <li><a class="whitelink nounderline" href="eventi.html">EVENTI</a></li>
+        <li><a class="whitelink nounderline" href="galleria.html">GALLERIA</a></li>
+        <li><a class="whitelink nounderline" href="shop.html">SHOP</a></li>
+       
       </ul>
     </nav>
   </header>
 
-
-
-    <main>
-      <p>Primo paragrafo.</p>
-      <p>Secondo paragrafo.</p>
-      <p>Terzo paragrafo.</p>
-    </main>
-
- 
-  <footer>
-    <p>Sito realizzato da Paola Gianotti e Alice Cangioli</p>
+  <div class="product">
+    <div class="product-image">
+      <img src="immagini/maglietta.jpeg" alt="Prodotto 1">
+    </div>
+    <div class="product-description">
+      <h2>T-SHIRT</h2>
+      <p>Doll house Tshirt con scritta.</p>
+    </div>
+    <a class="preorder-button" href="#">Pre-Order</a>
+  </div>
+  <div class="product">
+    <div class="product-image">
+      <img src="immagini/felpa.png" alt="Prodotto 2">
+    </div>
+    <div class="product-description">
+      <h2>HOODIE</h2>
+      <p>Doll house hoodie con scritta.</p>
+    </div>
+    <a class="preorder-button" href="#">Pre-Order</a>
+  </div>
+  <div class="product">
+    <div class="product-image">
+      <img src="immagini/ventaglio2.jpeg" alt="Prodotto 3">
+    </div>
+    <div class="product-description">
+      <h2>VENTAGLIO</h2>
+      <p>Doll house ventaglio.</p>
+    </div>
+    <a class="preorder-button" href="#">Pre-Order</a>
+  </div>
+  <footer class="footer">
+    <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
+    <nav>
+      <ul>
+      
+        <li><a href="#">Documentazione</a></li>
   </footer>
-  
+
 </body>
 </html>

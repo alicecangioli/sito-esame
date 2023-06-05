@@ -1,61 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Doll House documentazione</title>
+  <title>DOLLHOUSE</title>
+  <meta charset="utf-8"> 
   <style>
-     body {
-      background-color: black;
-      color: white; /* opzionale: imposta il colore del testo su bianco per migliorare la leggibilità */
-    }
-    /* Aggiungi stili CSS per l'header */
-    header {
-      background-color: #f1f1f1;
-      padding: 20px;
-    }
-
-    h1 {
-      color: #333;
-      font-size: 24px;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
+    body {
       margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+  background-color: black;
+}
+    .header {
+      background-color: black;
+      color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+
+    }
+
+    .logo {
+      width: 280px;
+      height: auto;
+    }
+
+    .menu-toggle {
+      color:#851064;
+      font-size: 40px;
+      cursor: pointer;
+      position: sticky;
+
+    }
+
+
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu.open .menu-items {
+      display: flex;
+    }
+
+    .menu-items li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    .menu-items a {
+      color: #851064;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold; 
+    }
+
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(168, 9, 149, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+
+.text-section {
+  width: 70%;
+  padding: 0 20px;
+}
+
+.text-section h2 {
+  font-size: 50px;
+}
+
+.text-section p {
+  font-size: 23px;
+}
+
+.image-section {
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+    .footer {
+      background-color: purple;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
 
     nav ul li {
-      display: inline;
-      margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia il colore al passaggio del mouse */
+  font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
+}
+ </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
     }
 
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-    }
-  </style>
+
+
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Dollhouse documentazione</h1>
-    <nav>
-        <ul>
-            <li><a class="whitelink nounderline" href="home.html">Home</a></li>
-            <li><a class="whitelink nounderline" href="eventi.html">Eventi</a></li>
-            <li><a class="whitelink nounderline" href="galleria.html">Galleria/DJ?</a></li>
-            <li><a class="whitelink nounderline" href="shop.html">Shop</a></li>
-            <li><a class="active no underline" href="documentazione.html">Documentazione</a></li>
-          </ul>
+  <header class="header">
+    <img class="logo" src="img/logo.jpeg" alt="Logo DOLLHOUSE">
+    <nav class="menu">
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <ul class="menu-items">
+        <li><a class="active nounderline" href="home.html">HOME</a></li>
+        <li><a class="whitelink nounderline" href="eventi.html">EVENTI</a></li>
+        <li><a class="whitelink nounderline" href="galleria.html">GALLERIA</a></li>
+        <li><a class="whitelink nounderline" href="shop.html">SHOP</a></li>
+
+      </ul>
     </nav>
   </header>
-  
-  <footer>
-    <p>Sito realizzato da Paola Gianotti e Alice Cangioli</p>
+
+  <section class="content-section">
+    <div class="text-section">
+      <h2>Documentazione</h2>
+      <p>In the early 1990's Amnesia passed over into the hands of its current owner and began to experience huge growth. 4 bars increased to the current 16, 16 employees to more than 200 and the Amnesia brand gained even further recognition and International acclaim . 
+        Some of the best DJs in the world have joined us including Sven Väth, Chase & Status, Luciano, Carl Cox, Paul Van Dyk, Skrillex and Diplo to name a few. Special live performances from Underworld, Public Enemy, Tinie Tempah, Snoop Dogg and 50 cent have also taken place on our stages over the years.
+        Naomi Campbell, Puff Daddy, Mick Jagger, Bono, Shakira, Lionel Messi, Cristiano Ronaldo, Elle Mcpherson, Elsa Pataky, Valentino Rossi and Leonardo di Caprio are just some of the well-known personalities who have also partied with us.
+        In 2007, 2008, 2009 and 2011 Amnesia was awarded the Best Global Club by the prestigious International Dance Music Awards in Miami.
+        We have also launched our #AmnesiaWorldwide series and we continue to  bring our Ibiza vibes to City's around the world.</p>
+    </div>
+    <div class="image-section">
+      <img src="img/faccina.jpeg" alt="FACCINA LOGO">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
+    <nav>
+      <ul>
+
+        <li><a href="#">Documentazione</a></li>
   </footer>
-  
+
 </body>
 </html>

@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Doll House</title>
+  
+  <meta charset="utf-8"> 
   <link rel="stylesheet" href="eventi.css">
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
+    }
+</script>
+<title>DOLLHOUSE</title>
 </head>
+
+
 <body>
-  <header>
-    <h1>Eventi</h1>
-    <nav>
-        <ul>
-        <li><a class="whitelink nounderline" href="home.html">Home</a></li>
-        <li><a class="active nounderline" href="eventi.html">Eventi</a></li>
-        <li><a class="whitelink nounderline" href="galleria.html">Galleria/DJ?</a></li>
-        <li><a class="whitelink nounderline" href="shop.html">Shop</a></li>
-        <li><a class="whitelink no underline" href="documentazione.html">Documentazione</a></li>
+  <header class="header">
+    <img class="logo" src="img/logo.jpeg" alt="Logo DOLLHOUSE">
+   <p class="left-align"></p> <h1>EVENTI</h1> 
+    <nav class="menu">
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu-items">
+        <li><a class="whitelink nounderline" href="home.html">HOME</a></li>
+        <li><a class="active nounderline" href="eventi.html">EVENTI</a></li>
+        <li><a class="whitelink nounderline" href="galleria.html">GALLERIA</a></li>
+        <li><a class="whitelink nounderline" href="shop.html">SHOP</a></li>
+    
         </ul>
     </nav>
   </header>
 
+ 
+
+
+  
 
    
 
@@ -34,14 +51,16 @@
 
 <h2>NOME DELL'EVENTO</h2> 
 <p id="p1">questo è il primo evento e questa è la foto del primo evento da scrivere la data e tutto il resto
+  </p>
 
   <style>
     p {
       padding-bottom: 10px; /* Aggiunge uno spazio sotto il paragrafo */
     }
 
-    button { 
-      margin-top: 10px; /* Aggiunge una spaziatura sopra il bottone */
+  
+   button { 
+      margin-top: 20px; /* Aggiunge una spaziatura sopra il bottone */
       /* Stili aggiuntivi per il bottone */
 
     }
@@ -67,12 +86,20 @@
 
       <div class="container2">
       
-        <img src="img/evento1.jpeg" alt="immagine di una festa in discoteca"
+        <img src="img/evento2.jpeg" alt="immagine di una console in discoteca"
         width="50%"
         height="50%">
+
+
+
+
+
+
+
+
         
 <h2>NOME DELL'EVENTO 2</h2> 
-<p id="p1">questo è il SECONDO evento e questa è la foto del primo evento da scrivere la data e tutto il resto
+<p id="p1">questo è il SECONDO evento e questa è la foto del primo evento da scrivere la data e tutto il resto </p>
 
   <style>
     p {
@@ -98,7 +125,7 @@
 
 <div class="container3">
       
-  <img src="img/evento1.jpeg" alt="immagine di una festa in discoteca"
+  <img src="img/evento3.jpeg" alt="immagine di una discoteca"
   width="50%"
   height="50%">
 
@@ -125,16 +152,20 @@ style="border-radius: 4px;" >
 </a>
 </p>
 
+</div>
 
+
+
+<footer class="footer">
+<p>© 2023 Doll House. Sito creato da Paola Gianotti e Alice Cangioli.</p>
+<nav>
+  <ul>
+
+    <li><a href="#">Documentazione</a></li>
+</footer>
+
+</body>
+</html>
   </div>
 
       
-    </main>
-
- 
-  <footer>
-    <p>Sito realizzato da Paola Gianotti e Alice Cangioli</p>
-  </footer>
-  
-</body>
-</html>
