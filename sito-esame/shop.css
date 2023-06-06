@@ -1,0 +1,118 @@
+h1 {
+    font-size: 450%;
+    color: #514e50;
+}
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+  background-color: black;
+}
+    .header {
+      background-color: black;
+      color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+    
+    }
+    
+    .logo {
+      width: 280px;
+      height: auto;
+    }
+    
+    .menu-toggle {
+      color:#851064;
+      font-size: 40px;
+      cursor: pointer;
+      position: sticky;
+    
+    }
+  
+    
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu.open .menu-items {
+      display: flex;
+    }
+    
+    .menu-items li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    
+    .menu-items a {
+      color: #851064;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold; 
+    }
+    .footer {
+      background-color: #440147;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff; /* Cambia il colore al passaggio del mouse */
+  font-weight: bold; /* Cambia lo stile del testo al passaggio del mouse */
+}
+
+.product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .product-image {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-description {
+      margin-bottom: 5px;
+      color: #851064;
+    }
+
+    .preorder-button {
+      padding: 10px 20px;
+      background-color: #440147;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+ 
