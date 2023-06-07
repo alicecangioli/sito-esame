@@ -31,6 +31,7 @@
       width: 280px;
       height: auto;
     }
+
     
     .menu-toggle {
       color:#851064;
@@ -92,10 +93,15 @@ nav ul li a:hover {
 }
 h1 {
       color: #851064; /* Colore viola */
-      font-size: 30px; /* Dimensione del carattere */
+      font-size: 50px; /* Dimensione del carattere */
       font-weight: 600; /* Carattere in grassetto */
       margin-left: 20px;
     }
+
+    .centered {
+    text-align: center;
+  } 
+
  /* Stile per il contenitore principale */
  .product-container {
       display: flex;
@@ -108,9 +114,9 @@ h1 {
     /* Stile per i quadrati dei prodotti */
       .product-square {
   width: 385px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(37, 11, 39, 0.5);
   border: 1px solid;
-  border-image: linear-gradient(to bottom right, #851064, #440147) 1;
+  border-image: linear-gradient(to bottom right, #000000, #350238) 1;
   padding: 20px;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -218,6 +224,7 @@ h1 {
 <body>
   <header class="header">
     <img class="logo" src="immagini/doll house9.jpg" alt="Logo">
+    <div class="centered"> <h1>SHOP</h1></div>
     <nav class="menu">
       <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
       <ul class="menu-items">
@@ -230,8 +237,8 @@ h1 {
     </nav>
   </header>
   
+  <div class="centered">  <h1>⠀</h1></DIV>
 
-  <h1>DOLL HOUSE SHOP</h1>
 
   <div class="product-container">
     <div class="product-square">

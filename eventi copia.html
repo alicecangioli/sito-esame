@@ -78,7 +78,7 @@ body {
 display: flex;
 align-items: center;
 justify-content: center;
-color: rgba(168, 9, 149, 0.8);
+color: rgba(0, 0, 0, 0.8);
 width: 100%;
 height: 100vh;
 }
@@ -131,7 +131,17 @@ nav ul li {
 
 
 
+  h1 {
+      color: #851064; /* Colore viola */
+      font-size: 50px; /* Dimensione del carattere */
+      font-weight: 600; /* Carattere in grassetto */
+      margin-left: 20px;
+      text-align: center;
+    }
 
+    .centered {
+    text-align: center;
+  } 
 
 
 /*1 */
@@ -139,10 +149,11 @@ nav ul li {
     overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
     text-align: center; /* Centra orizzontalmente */
     margin-bottom: 60px;
-    background-color: rgba(82, 11, 117, 0.5); /* Imposta il colore di sfondo con trasparenza */
+    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
     width: 100%;
     height: 40%;
     padding: 20px;
+ 
   }
 
   .container img {
@@ -158,7 +169,7 @@ nav ul li {
   .product-button {
       display: inline-block;
       padding: 10px 20px;
-      background-color: black;
+      background-color: #851064;
       color: #fff;
       text-decoration: none;
       border-radius: 20px;
@@ -192,10 +203,11 @@ nav ul li {
     overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
     text-align: center; /* Centra orizzontalmente */
     margin-bottom: 60px;
-    background-color: rgba(168, 31, 196, 0.5); /* Imposta il colore di sfondo con trasparenza */
+    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
     width: 100%;
     height: 40%;
     padding: 20px;
+
   }
   
   
@@ -212,10 +224,11 @@ nav ul li {
   overflow: auto; /* Assicura che il contenuto del div non si sovrapponga all'esterno */
     text-align: center; /* Centra orizzontalmente */
     margin-bottom: 60px;
-    background-color: rgba(209, 120, 202, 0.5); /* Imposta il colore di sfondo con trasparenza */
+    background-color: rgba(37, 11, 39, 0.5); /* Imposta il colore di sfondo con trasparenza */
     width: 100%;
     height: 40%;
     padding: 20px;
+ 
   }
   
   .container3 img {
@@ -225,13 +238,15 @@ nav ul li {
   }
   
 
-
   .footer {
-    background-color: purple;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }</style>
+      background-color: #440147;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+  </style>
   <script>
     function toggleMenu() {
       const menu = document.querySelector('.menu');
@@ -244,7 +259,7 @@ nav ul li {
 <body>
   <header class="header">
     <img class="logo" src="immagini/logo.jpg" alt="Logo DOLLHOUSE">
-    <h1>Eventi</h1>
+    <div class="centered"> <h1>EVENTI</h1></div>
     <nav class="menu">
       <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
         <ul class="menu-items">
@@ -260,7 +275,7 @@ nav ul li {
  
 
 
-  
+  <div class="centered">  <h1>⠀</h1></DIV>
 
    
 
